@@ -14,7 +14,7 @@
 <nav class="navbar">
     <div class="navbar-overlay" onclick="toggleMenuOpen()"></div>
 
-    <button type="button" class="navbar-burger" onclick="toggleMenuOpen()">
+    <button class="navbar-burger" onclick="toggleMenuOpen()">
         <span class="material-icons">menu</span>
     </button>
 
@@ -28,8 +28,9 @@
 </nav>   
 
 <script type="text/javascript">
-    const toggleMenuOpen=()
-</script>
+    const toggleMenuOpen = () => document.body.classList.toggle("open");
+</script> 
     
 </body>
 </html>
+
